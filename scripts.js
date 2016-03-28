@@ -10,10 +10,12 @@ myApp.controller('myController', function($scope){
 	$scope.addStudent = function(){
 		$scope.dcClass.push($scope.newStudent);
 		$scope.newStudent = '';
+		console.log($index);
 	}
 
-	$scope.removeStudent = function(name){
-		console.log(name);
+	$scope.removeStudent = function(i){
+		$scope.dcClass.splice(i,1);
+		// console.log(name);
 	}
 
 });
