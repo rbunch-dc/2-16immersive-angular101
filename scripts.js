@@ -1,18 +1,19 @@
+var myApp = angular.module('myApp', []);
+// console.log(myApp);
+myApp.controller('myController', function($scope){
 
-// --------The plan vanilla JS way--------- //
-// var myInput = document.getElementById('myInput');
+	// $scope.first = "Rob";
+	// $scope.last = "Bunch";
 
-// myInput.addEventListener('keyup', function(){
-// 	// console.log('User hit a key!');
-// 	var userText = myInput.value;
-// 	document.getElementById('inputText').innerHTML = userText
+	$scope.dcClass = ['Tristan','Josh','Bogden','Lazlo','Keith','Will','Curtis','Joe','Kochan','Patrick','Jonathan','Jeremy'];
 
-// })
+	$scope.addStudent = function(){
+		$scope.dcClass.push($scope.newStudent);
+		$scope.newStudent = '';
+	}
 
+	$scope.removeStudent = function(name){
+		console.log(name);
+	}
 
-// ------------ The jQuery way! ------------ //
-// $('#myInput').keyup(function(){
-// 	$('#inputText').html($('#myInput').val());
-// })
-
-
+});
