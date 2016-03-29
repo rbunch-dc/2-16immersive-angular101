@@ -1,11 +1,7 @@
 var myApp = angular.module('myApp',[]);
-myApp.controller('myController', function($scope){
-
-	console.log(countries);
+myApp.controller('myController', function($scope, $http){
 
 	$scope.countries = countries;
-
-	console.log($scope.countries);
 
 
 	$scope.addCountry = function(){
