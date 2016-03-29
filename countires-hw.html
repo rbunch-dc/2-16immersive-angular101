@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title></title>
+</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script type="text/javascript" src="controller.js"></script>
+
+<body ng-controller="myController">
+
+	<table border=1>
+		<thead>
+			<th>Country Name</th>
+			<th>Population</th>
+			<th>El Presidente</th>
+			<th>Flag</th>
+		</thead>
+		<tdboy>
+			<tr ng-repeat="country in countries track by $index">
+				<td>{{country.name}}</td>
+				<td>{{country.population}}</td>
+				<td>{{country.president}}</td>
+				<td><img ng-src="{{country.src}}"></td>
+			</tr>
+		</tdboy>
+	</table>
+
+	<form ng-submit="addCountry()">
+		<input type="text" ng-model="countryName" placeholder="Country Name">
+		<input type="text" ng-model="popuation" placeholder="Country Population">
+		<input type="text" ng-model="leader" placeholder="Country Leader">
+		<input type="text" ng-model="president" placeholder="Country President">
+		<input type="text" ng-model="flag" placeholder="Country Flag">
+		<input type="submit" value = "Add Country">
+	</form>
+
+</body>
+</html>
