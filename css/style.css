@@ -1,0 +1,30 @@
+/* line 2, ../compass/sass/_base.scss */
+body {
+  background: black;
+}
+/* line 4, ../compass/sass/_base.scss */
+body #wrapper {
+  width: 40%;
+  margin: auto;
+  padding: 30px;
+  background-color: #cacaca;
+}
+/* line 9, ../compass/sass/_base.scss */
+body #wrapper #header {
+  position: relative;
+  border: #5c9bb7 10px solid;
+}
+/* line 12, ../compass/sass/_base.scss */
+body #wrapper #header h1 {
+  text-align: center;
+}
+/* line 16, ../compass/sass/_base.scss */
+body #wrapper .item {
+  margin: 10px;
+  font-size: 24px;
+}
+/* line 19, ../compass/sass/_base.scss */
+body #wrapper .item .accepted {
+  font-size: 40px;
+  color: blue;
+}

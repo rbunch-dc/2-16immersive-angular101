@@ -3,7 +3,6 @@ myApp.controller('myController', function($scope, $http){
 
 	$scope.countries = countries;
 
-
 	$scope.addCountry = function(){
 		$scope.tempID = 'test div';
 		$scope.message = 'Your coutnry was added!!';
